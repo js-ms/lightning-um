@@ -1,29 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ProductosService } from 'src/app/services/productos.service';
 
 @Component({
   selector: 'app-categorias',
   templateUrl: './categorias.component.html',
   styleUrls: ['./categorias.component.css']
 })
-export class CategoriasComponent {
-  productos:any = [
-    {
-      nombre: 'p1',
-      descripcion: 'd1',
-      precio: 2000,
-      cantidad: 5
-    },
-    {
-      nombre: 'p2',
-      descripcion: 'd2',
-      precio: 3000,
-      cantidad: 5
-    },
-    {
-      nombre: 'p3',
-      descripcion: 'd3',
-      precio: 2000,
-      cantidad: 5
-    },
-  ]
+export class CategoriasComponent implements OnInit {
+  productos: any
+  constructor(private productosService: ProductosService){
+  }
+  ngOnInit(){
+    this.productosService.getAll().subscribe( p => {
+      this.productos = p
+    });
+  }
+  create(){
+    this.productosService.post().subscribe(
+      (response) => {
+        console.log('Respuesta del servidor:', response);
+      },
+      (error) => {
+        console.error('Error en la solicitud POST:', error);
+      }
+    );
+  }
+
 }

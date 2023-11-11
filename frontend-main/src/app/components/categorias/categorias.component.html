@@ -1,7 +1,12 @@
 <section>
     <div class='product' *ngFor="let p of productos">
+        <!-- <span class="img"><img src="{{assets/img/expresso.png}}" style="width: 100px;"></span> -->
+        <span class="img">
+          <img src="{{p.img}}" style="width: 80px;">
+        </span>
         <span class="nombre">{{p.nombre}}</span>
         <span class="precio">{{p.precio}}</span>
         <span class="cantidad">{{p.cantidad}}</span>
     </div>
+    <button (click)="create()">crear</button>
 </section>
