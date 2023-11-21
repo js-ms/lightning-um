@@ -1,5 +1,5 @@
 BY acastano90931
-AND catherine025
+BY catherine025
 ----------------------------------------------------------------
 REST_HOST = 'bitcoin-um.t.voltageapp.io:8080'
 MACAROON_PATH = '/home/almarales/btc/certificates/admin.macaroon'
