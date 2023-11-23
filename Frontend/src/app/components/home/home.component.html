@@ -1,0 +1,57 @@
+<section>
+    <div id="descripcion-proyecto">
+      <button
+        style="margin: 50px; padding: 10px"
+        type="button"
+        class="btn btn-primary"
+        (click)="openPopup()">Descripcion-proyecto
+      </button>
+      <div
+        class="modal"
+        tabindex="-1"
+        role="dialog"
+        [ngStyle]="{'display':displayStyle}">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h1>Proyecto</h1>
+              <p>El proyecto Bitcoin Project1🏪 es una iniciativa enfocada en demostrar la eficacia y facilidad de las transacciones utilizando el protocolo Lightning. Este proyecto se desarrolla en un contexto donde los usuarios, como Alicia, pueden comprar productos en establecimientos como "UM Store" utilizando billeteras Lightning.</p>
+              <p>El protocolo Lightning permite transacciones instantáneas y económicas. En este caso, cuando Alicia quiere adquirir una taza de café, "UM Store" genera una factura utilizando el protocolo Lightning. Alicia recibe esta factura en su interfaz, procede con el pago a través de su billetera Lightning y una vez confirmado el pago, la tienda recibe la notificación, actualizando así su saldo y permitiendo que Alicia obtenga su café de manera rápida y sencilla.</p>
+              <p>El proyecto se basa en un frontend para la tienda, una interfaz para los usuarios y un backend que gestiona los diferentes aspectos de las transacciones. Esta iniciativa destaca la practicidad y agilidad que ofrece el protocolo Lightning al facilitar transacciones casi instantáneas y con costos mínimos en comparación con métodos tradicionales.</p>
+              <p></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger"
+                      (click)="closePopup()">
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="integrantes">
+        <div class="integrante">
+            <div class="main">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu-wwi71UPai4y7oeE-L8x-xoV7KZ89vIltw&usqp=CAU" alt="">
+                <span>Jesús Hernando López</span>
+            </div>
+            <span class="team f">FRONTEND</span>
+        </div>
+        <div class="integrante">
+            <div class="main">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu-wwi71UPai4y7oeE-L8x-xoV7KZ89vIltw&usqp=CAU" alt="">
+                <span>Donal Herrera</span>
+            </div>
+            <span class="team f">FRONTEND</span>
+        </div>
+        <div class="integrante">
+            <div class="main">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu-wwi71UPai4y7oeE-L8x-xoV7KZ89vIltw&usqp=CAU" alt="">
+                <span>Carlos y Jorge</span>
+            </div>
+            <span class="team f">FRONTEND</span>
+        </div>
+
+    </div>
+</section>

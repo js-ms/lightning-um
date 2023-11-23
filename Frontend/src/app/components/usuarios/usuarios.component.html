@@ -1,0 +1,11 @@
+<section>
+  <span>Usuario: Alice</span>
+    <div class='product' *ngFor="let p of usuarios">
+        <!-- <span class="img"><img src="{{assets/img/expresso.png}}" style="width: 100px;"></span> -->
+        <span class="img">
+          <img src="{{p.img}}" style="width: 80px;">
+        </span>
+        <span class="nombre">{{p.nombre}}</span>
+        <span class="precio">{{p.saldo}}</span>
+    </div>
+</section>

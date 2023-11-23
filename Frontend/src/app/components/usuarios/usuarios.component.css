@@ -1,0 +1,21 @@
+.product{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid #aaa;
+}
+.product span{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span.nombre{
+    font-size: 17pt;
+    font-weight: bold;
+}
+span.precio::before{
+    content: "$"
+}
